@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/input_Remember m
 
 WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
-WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/button_Aniseed Syrup_btn btn-primary glyphicon glyphicon-shopping-cart add-to-cart'))
+WebUI.verifyMatch('https://localhost:44368/shoppingcart/additem?id=1000a', '', false)
 
 WebUI.closeBrowser()
 

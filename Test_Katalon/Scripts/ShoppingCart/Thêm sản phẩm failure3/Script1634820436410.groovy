@@ -35,3 +35,5 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
 WebUI.verifyMatch('https://localhost:44368/shoppingcart/additem?id=a', '', false)
 
+WebUI.closeBrowser()
+
