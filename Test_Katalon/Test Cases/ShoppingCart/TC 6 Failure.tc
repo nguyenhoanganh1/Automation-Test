@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Thêm sản phẩm failure1</name>
+   <name>TC 6 Failure</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c8196ce6-1059-4cf7-844c-18aad4a513b5</testCaseGuid>

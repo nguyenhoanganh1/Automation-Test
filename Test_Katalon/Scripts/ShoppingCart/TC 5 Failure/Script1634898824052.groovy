@@ -33,7 +33,11 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/input_Remember m
 
 WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
-WebUI.verifyMatch('https://localhost:44368/shoppingcart/additem?id=', '', false)
+WebUI.navigateToUrl('https://localhost:44368/shoppingcart/additem?id=-100')
+
+CurrentUrL = WebUI.getUrl()
+
+WebUI.verifyMatch(CurrentUrL,'https://localhost:44368/shoppingcart/additem?id=-100', true)
 
 WebUI.closeBrowser()
 

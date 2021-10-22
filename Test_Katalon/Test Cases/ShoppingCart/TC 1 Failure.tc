@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Xem giỏ hàng thất bại</description>
+   <name>TC 1 Failure</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4cf71b46-f58c-4ac4-90c9-7df3756b1268</testCaseGuid>
+</TestCaseEntity>
