@@ -16,7 +16,7 @@ namespace Code_Katalon_Test
         [TestMethod]
         public void Addcategory()
         {
-            IWebDriver driver = new InternetExplorerDriver();
+            IWebDriver driver = new ChromeDriver();
             // mở to cửa sổ truy cập vào trang web
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://localhost:44368/");
@@ -33,15 +33,15 @@ namespace Code_Katalon_Test
 
             // điền thông tin để đăng nhập
             IWebElement elementEmail = driver.FindElement(By.XPath("//input[@name='email']"));
-            
-            elementEmail.SendKeys("nhutle8420@gmail.com");
+
+            elementEmail.SendKeys("nghiemn@fpt.edu.vn");
 
 
             // mật khẩu
             IWebElement elementPassword = driver.FindElement(By.XPath("//input[@name='password']"));
-            elementPassword.SendKeys("Abc123456@");
+            elementPassword.SendKeys("admin");
 
-           // IWebElement elementRememberMe = driver.FindElement(By.XPath("//input[@name='remember']"));
+            // IWebElement elementRememberMe = driver.FindElement(By.XPath("//input[@name='remember']"));
             //elementRememberMe.Click();
 
 

@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://localhost:44368/')
+WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://localhost:44368/')
 
@@ -29,9 +29,11 @@ WebUI.setText(findTestObject('Page_Login - My ASP.NET Application/input_Email_em
 
 WebUI.setText(findTestObject('Page_Login - My ASP.NET Application/input_Password_password'), 'anatr')
 
+WebUI.click(findTestObject('Page_Login - My ASP.NET Application/input_Remember me_remember'))
+
 WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
-WebUI.navigateToUrl('https://localhost:44368/')
+CurrentUrL = WebUI.getUrl()
 
-WebUI.verifyMatch('https://localhost:44368/', 'https://localhost:44368/', true)
+WebUI.verifyMatch(CurrentUrL, 'https://localhost:44368/', true)
 
