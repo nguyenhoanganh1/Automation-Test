@@ -35,5 +35,23 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
 WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/button_Aniseed Syrup_btn btn-primary glyphicon glyphicon-shopping-cart add-to-cart'))
 
+WebUI.waitForAlert(3)
+
+alertText = WebUI.getAlertText()
+
+WebUI.verifyMatch(alertText, 'Thêm vào giỏ hàng thành công', false)
+
+WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/button_Mishi Kobe Niku_btn btn-primary glyphicon glyphicon-shopping-cart add-to-cart'))
+
+WebUI.waitForAlert(3)
+
+alertText = WebUI.getAlertText()
+
+WebUI.verifyMatch(alertText, 'Thêm vào giỏ hàng thành công', false)
+
+WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+
 WebUI.closeBrowser()
 

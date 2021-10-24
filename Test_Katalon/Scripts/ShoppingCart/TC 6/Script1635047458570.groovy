@@ -33,11 +33,31 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/input_Remember m
 
 WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
-WebUI.navigateToUrl('https://localhost:44368/shoppingcart/additem?id=-100')
+WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/button_Aniseed Syrup_btn btn-primary glyphicon glyphicon-shopping-cart add-to-cart'))
 
-CurrentUrL = WebUI.getUrl()
+WebUI.waitForAlert(3)
 
-WebUI.verifyMatch(CurrentUrL,'https://localhost:44368/shoppingcart/additem?id=-100', true)
+alertText = WebUI.getAlertText()
+
+WebUI.verifyMatch(alertText, 'Thêm vào giỏ hàng thành công', false)
+
+WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/button_Aniseed Syrup_btn btn-primary glyphicon glyphicon-shopping-cart add-to-cart'))
+
+WebUI.waitForAlert(3)
+
+alertText = WebUI.getAlertText()
+
+WebUI.verifyMatch(alertText, 'Thêm vào giỏ hàng thành công', false)
+
+WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/a_Gi hng'))
+
+quantity = WebUI.getText(findTestObject('Page_ShowCart - My ASP.NET Application/li_2'))
+
+WebUI.verifyMatch(quantity, '2', false)
 
 WebUI.closeBrowser()
 

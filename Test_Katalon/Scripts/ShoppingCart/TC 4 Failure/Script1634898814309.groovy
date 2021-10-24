@@ -35,9 +35,11 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
 WebUI.navigateToUrl('https://localhost:44368/shoppingcart/additem?id=abc')
 
-CurrentUrL = WebUI.getUrl()
+WebUI.waitForAlert(3)
 
-WebUI.verifyMatch('CurrentUrL', 'https://localhost:44368/shoppingcart/additem?id=abc', true)
+alertText = WebUI.getAlertText()
+
+WebUI.verifyMatch(alertText, 'Thêm vào giỏ hàng thành công', false)
 
 WebUI.closeBrowser()
 
