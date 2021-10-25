@@ -35,5 +35,7 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
 CurrentUrL = WebUI.getUrl()
 
-WebUI.verifyMatch(CurrentUrL, 'https://localhost:44368/user/login', true)
+WebUI.verifyMatch(CurrentUrL, 'https://localhost:44368/User/Login', false)
+
+WebUI.closeBrowser()
 

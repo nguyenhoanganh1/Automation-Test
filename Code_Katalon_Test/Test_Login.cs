@@ -38,13 +38,6 @@ namespace Code_Katalon_Test
             IWebElement elementBtnLogin = driver.FindElement(By.XPath("//button[@type='submit']"));
             elementBtnLogin.Click();
 
-            IWebElement elementText = driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Giỏ hàng'])[1]/preceding::i[1]"));
-            String text = elementText.Text;
-
-            if (text == null)
-            {
-                Assert.Fail();
-            }
 
             driver.Close();
         }

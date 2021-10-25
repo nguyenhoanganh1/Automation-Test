@@ -37,3 +37,5 @@ CurrentUrL = WebUI.getUrl()
 
 WebUI.verifyMatch(CurrentUrL, 'https://localhost:44368/', true)
 
+WebUI.closeBrowser()
+

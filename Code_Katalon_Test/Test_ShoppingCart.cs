@@ -37,7 +37,6 @@ namespace Code_Katalon_Test
             elementBtnLogin.Click();
 
             driver.Navigate().GoToUrl("https://localhost:44368/shoppingcart/showcart?id=a");
-            Assert.Fail();
 
             driver.Close();
         }
@@ -227,7 +226,7 @@ namespace Code_Katalon_Test
             elementBtnLogin.Click();
 
             driver.Navigate().GoToUrl("https://localhost:44368/shoppingcart/additem?id=abc");
-            Assert.Fail();
+
 
             driver.Close();
         }
@@ -258,7 +257,6 @@ namespace Code_Katalon_Test
             elementBtnLogin.Click();
 
             driver.Navigate().GoToUrl("https://localhost:44368/shoppingcart/additem?id=");
-            Assert.Fail();
 
             driver.Close();
         }

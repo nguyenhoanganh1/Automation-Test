@@ -37,7 +37,7 @@ WebUI.navigateToUrl('https://localhost:44368/shoppingcart/additem?id=')
 
 CurrentUrL = WebUI.getUrl()
 
-WebUI.verifyMatch(CurrentUrL, 'https://localhost:44368/shoppingcart/additem?id=', true)
+WebUI.verifyMatch(CurrentUrL, 'https://localhost:44368/shoppingcart/additem?id=', false)
 
 WebUI.closeBrowser()
 

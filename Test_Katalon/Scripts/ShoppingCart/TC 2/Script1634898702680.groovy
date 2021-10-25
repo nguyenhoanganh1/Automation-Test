@@ -35,3 +35,5 @@ WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
 WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/a_Gi hng'))
 
+WebUI.closeBrowser()
+
