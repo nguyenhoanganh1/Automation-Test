@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login Success</name>
+   <name>TC 3 Failure</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f4d26560-bfbd-4236-b703-4c87592315d0</testCaseGuid>
+   <testCaseGuid>bdaf5fde-3bf0-4608-a8fd-3728e13fccea</testCaseGuid>
 </TestCaseEntity>

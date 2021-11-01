@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://localhost:44368/')
+WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://localhost:44368/')
 
@@ -25,15 +25,17 @@ WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/a_Ti khon'))
 
 WebUI.click(findTestObject('Page_Home Page - My ASP.NET Application/a_ng nhp'))
 
-WebUI.setText(findTestObject('Page_Login - My ASP.NET Application/input_Email_email'), 'nghiemn@fpt.edu.vn')
+WebUI.setText(findTestObject('Page_Login - My ASP.NET Application/input_Email_email'), 'anatr@gmail.com')
 
-WebUI.setText(findTestObject('Page_Login - My ASP.NET Application/input_Password_password'), 'anatr')
+WebUI.setText(findTestObject('Page_Login - My ASP.NET Application/input_Password_password'), '123')
+
+WebUI.click(findTestObject('Page_Login - My ASP.NET Application/input_Remember me_remember'))
 
 WebUI.click(findTestObject('Page_Login - My ASP.NET Application/button_ng nhp'))
 
-WebUI.clearText(findTestObject('Page_Login - My ASP.NET Application/input_Email_email'))
+CurrentUrL = WebUI.getUrl()
 
-WebUI.clearText(findTestObject('Page_Login - My ASP.NET Application/input_Password_password'))
+WebUI.verifyMatch(CurrentUrL, 'https://localhost:44368/User/Login', false)
 
-WebUI.verifyMatch('https://localhost:44368/user/login', 'https://localhost:44368/user/login', true)
+WebUI.closeBrowser()
 

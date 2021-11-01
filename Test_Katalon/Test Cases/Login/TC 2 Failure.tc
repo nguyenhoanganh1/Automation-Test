@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login Unseccess Email</name>
+   <name>TC 2 Failure</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>3cb470da-bbda-4867-97b4-850851c82da0</testCaseGuid>
+   <testCaseGuid>5218b31d-f1f6-4557-aeda-3ad7e6172191</testCaseGuid>
 </TestCaseEntity>
