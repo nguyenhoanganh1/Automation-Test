@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('Page_Dangky - My ASP.NET Application/input_Confirm
 
 WebUI.setText(findTestObject('Page_Dangky - My ASP.NET Application/input_Fullname_fullname'), 'Hoang Long')
 
-WebUI.setText(findTestObject('Page_Dangky - My ASP.NET Application/input_Email Address_email'), 'long21@gmail.com')
+WebUI.setText(findTestObject('Page_Dangky - My ASP.NET Application/input_Email Address_email'), 'hang21@gmail.com')
 
 WebUI.uploadFile(findTestObject('Page_Dangky - My ASP.NET Application/input_Photo_photo_file'), 'D:\\IMG_0812.JPG')
 
